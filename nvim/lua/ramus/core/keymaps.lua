@@ -20,3 +20,11 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+keymap.set("n", "<Leader>o", ":Telescope oldfiles<CR>", { desc = "Recent Files", silent = true })
+keymap.set("n", "<Leader>b", ":Telescope buffers<CR>", { desc = "Active Buffers", silent = true })
+
+keymap.set("n", "<Leader>0",":normal! Go<CR>", { desc = "New Line", silent = true })
+
+keymap.set("n", "<Leader>ll", ":VimtexCompile<CR>", { desc = "Toggle tex compiler", silent = true })
+keymap.set("n", "<Leader>lt", ":VimtexTocToggle<CR>", { desc = "Toggle tex TOC", silent = true })

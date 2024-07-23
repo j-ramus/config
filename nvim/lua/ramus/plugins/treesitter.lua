@@ -13,6 +13,7 @@ return {
     treesitter.setup({ -- enable syntax highlighting
       highlight = {
         enable = true,
+        disable = {"latex",}
       },
       -- enable indentation
       indent = { enable = true },
@@ -68,7 +69,6 @@ return {
         "ruby",
         "rust",
         "scheme",
-        "latex",
         "ssh_config",
         "sql",
         "swift",
